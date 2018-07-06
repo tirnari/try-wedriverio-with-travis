@@ -1,0 +1,26 @@
+{
+  "name": "try-wedriverio-with-travis",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "test:coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "chai": "^4.1.2",
+    "cross-env": "^5.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "wdio-mocha-framework": "^0.6.1",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "webdriverio": "^4.13.0",
+    "wdio-spec-reporter": "^0.1.5"
+  }
+}
